@@ -1,0 +1,9 @@
+@echo off
+echo Starting Customer Intelligence Dashboard...
+echo.
+echo Step 1: Preprocessing data...
+python preprocess_data.py
+echo.
+echo Step 2: Starting dashboard...
+streamlit run dashboard.py --server.port 8501 --server.address 0.0.0.0
+pause
